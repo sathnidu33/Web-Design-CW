@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Coda&family=Fugaz+One&family=Oswald&family=Tourney:ital,wght@1,800;1,900&display=swap" rel="stylesheet">    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="QuaryFormCSS.css">
+    <style>
+
+    *{margin: 0; padding: 0;}
+    body{background-image: url(QuaryFormbg.jpg) ; background-position: center;background-size: cover; font-family: Arial, Helvetica, sans-serif; margin-top: 40px;}
+   .mainTopic{width: 800px;background-color:rgb(0,0,0,0.6) ; margin: auto; color:white ;padding: 10px 0px 10px 0px;text-align: center;border-radius: 15px 15px 0px 0px;}    
+    .main {background-color:rgb(0,0,0,0.5) ;width: 800px; margin: auto;}
+    form{padding: 10px;}
+    #name{width:100% ;height: 100px}
+    /**Text inputs css**/
+    .name{margin-left: 25px; margin-top: 30px;width: 125px;color:white ;font-size: 18px;font-weight: 700;}
+    .firstName{position: relative;left: 200px;top:-37px ;line-height: 40px;border-radius: 6px;padding: 0 22px;font-size: 16px;}
+    .lastName{position: relative;left: 417px;top: -80px;line-height: 40px;border-radius: 6px;padding: 0 22px;font-size: 16px;color:rgb(66, 66, 66) ;}
+    .firstLabel{position: relative;color: #afafaf;text-transform: capitalize;font-size: 14px;left: 203px;top: -45px;}
+    .lastLabel {position: relative;color: #afafaf;text-transform: capitalize;font-size: 14px;left: 175px;top: -45px;}
+    .email{position: relative;left: 200px;top:-37px;line-height: 40px; width: 480px;border-radius: 6px;padding: 0 22px;font-size: 16px;color: #555;} 
+    .code{position: relative;left: 200px;top:-37px;line-height: 40px; width: 95px;border-radius: 6px;padding: 0 22px;font-size: 16px;color: #555;} 
+    .number{position: relative;left: 200px;top:-37px;line-height: 40px; width: 252px;border-radius: 6px;padding: 0 22px;font-size: 16px;color: #555;} 
+    .areacode{position: relative; color: #afafaf;text-transform: capitalize;font-size: 16px;left: 54px;top:-4px}
+    .Number{position: relative; color: #afafaf;text-transform: capitalize;font-size: 16px;left: -105px;top:-2px}
+    .option{position: relative;left: 200px;top:-37px;line-height: 40px; width: 532px;height: 40px;border-radius: 6px;padding: 0 22px;font-size: 16px;color: #555; outline: none;overflow: hidden;} 
+    .option option{font-size: 20px;} 
+    #question{margin-left:25px ;color: white;font-size: 18px;}  
+    .radio{display: inline-block;padding-right:70px;font-size: 25px;margin-left: 25px;margin-top: 15px;color: white;}
+    .radio input{width: 20px;height: 20px;border-radius:50% ;cursor:pointer; outline: none;}
+    textarea{position: relative;left: 200px;top:-37px;line-height: 40px; width: 485px;border-radius: 6px;padding: 0 22px;font-size: 16px;color: #555;}
+    button{background-color: #3baf9f;display: block;margin: 20px 0px 0px 20px;text-align: center;border-radius: 12px;border:2px solid #366473;padding: 14px 110px;outline: none;color: white;cursor: pointer;transition:0.5s}
+    button:hover{background-color: #5390f5;}
+    a{color: white;}
+    .displayOutput{text-align: center;}
+    .navbar1{font-family:'Coda', cursive;}
+    
+  </style>
+</head>
+<body>
+    <div class="navbar1">
+    <div class="navbar">
+    <nav>    
+        <div class="logo">
+            <img src="nfl.png" alt="nfl" >
+        </div>
+            <!--Navigation bar-->
+            <ul>
+                <li><a href=""><b>Home</b></a></li>
+                <li><a href=""><b>Shop</b></a></li>
+                <li><a href=""><b>Quiz</b></a></li>
+                <li><a href=""><b>Images</b></a></li>
+                <li><a href="QuaryForm\Query Form.html" target="blank"><b>Feedback</b></a></li>
+                <li><a href=""><b>Site Map</b></a></li>
+                <li><a href=""><b>About us</b></a></li>
+            </ul>
+    </nav>
+</div>
+</div>   
+<br>
+   <div class="mainTopic">
+       <h1>Feedback Form</h1>
+   </div>
+   <div class="main">
+       <form>
+           <div id="name">
+               <h2 class="name">Name</h2>
+               <!-- This Section contains with text fields-->
+               <input class="firstName" type="text" id="firstName" name="firstName"><br>
+               <label for="firstName" class="firstLabel" >First Name</label>
+               <input class="lastName" type="text" id="lastName" name="lastName">
+               <label class= "lastLabel">Last Name</label>
+           </div>
+
+           <h2 class="name"><label for="email">E-mail </label> </h2>
+            <input class="email" type="text" id="email" name="email">
+
+           <h2 class="name">Mobile Number</h2>
+            <input class="code" type="text" id="code" name="areaCode">
+            <label for="code" class="areacode">Area Code</label>
+            <input class="number" type="text" id="number" name="Number">
+            <label for="number" class="Number">Phone Number</label>
+
+            <h2 class="name"><label for="optionMenu">Subject</label></h2>
+             <select class="option" name="subject" id="optionMenu"> <!--Drop downlist to select subject-->
+                <option disabled='disabled' selected='selected' value="">--Choose Option--</option>
+                <option value="Delivery">Delivery</option>
+                <option value="Return">Return</option>
+                <option value="Other">Other</option>
+             </select>
+
+             <h2 class="name"><label for="textArea"> Comments</label></h2> <!--Comment section-->
+            <textarea  name="comments" id="textArea"></textarea>
+            <br>
+
+             <h2 id="question">Is this the first time purchasing products from us?</h2>
+             <label for="radioYes" class="radio">
+                 <input  type="radio" name="question " class="radio-one" id="radioYes" value="yes" checked="checked" >
+                 <span class="checkmark"></span>
+                 Yes
+             </label>
+             <label for="radioNo" class="radio">
+                <input  type="radio" name="question " class="radio-two" value="no" id="radioNo" checked="checked" ><span class="checkmark"></span>
+                No
+            </label>
+
+            
+            <button  name="button" id="button1" value="Check Validity">Check Details</button> <!--Check validity button-->
+            <button type="Submit" value="Reset" onclick="window.location.reload();">Reset</button><!--Reset Button-->
+            
+<!--THIS PARAGRAPH TAGS USE TO DISPLAY USER INPUTS-->
+        <div class="displayOutput">
+            <p><span style="color:orange" id='display' ></span></p>
+            <p><span style="color:orange" id='display3'></span></p>
+            <p><span style="color:orange" id='display2'></span></p>
+            <p><span style="color:orange" id='display4'></span></p>
+            <p><span style="color:orange" id='display5'></span></p>
+        </div>
+      </form>
+   </div>
+   
+   <a href="developerPage.html" target="blank">Developer Page</a> <!--Developer button-->
+<script>
+     var firstName=document.getElementById("firstName");
+     var lastName=document.getElementById("lastName");
+     var sbutton=document.getElementById("button1");
+     var email=document.getElementById("email")
+     var code=document.getElementById("code")
+     var number=document.getElementById("number")
+     var optionMenu=document.getElementById("optionMenu")
+     var textArea=document.getElementById("textArea")
+     var radioYes=document.getElementById("radioYes")
+     var radioNo=document.getElementById("radioNo")
+
+     sbutton.onclick=function checkValidity(){  //funtion which use to check empty input fields 
+         if(firstName.value=""){
+           alert("Please enter your first name");
+       }
+         else if(lastName.value==""){
+        alert("Please enter your last name");
+       }
+         else if(email.value==""){
+        alert("Please enter your E-mail adress");
+       }
+
+        else if(number.value==0 ){
+        alert("Please enter put your mobile number");
+
+        }
+        else if(code.value==0 ){
+        alert("Please enter put your area code");
+        
+    }
+
+   // else if(optionMenu.value==0){
+       // alert("Please silect the subject")
+
+   // }
+    else if(textArea.value==0){
+        alert("Please fill the comment");
+
+    }
+    else if(radioYes.value==0){
+        alert("Please put yes");
+
+    }
+    
+}
+
+function showInput() {  //function which use to display user inputs
+    
+        document.getElementById('display').innerHTML = ("Name:"+ document.getElementById("firstName").value);
+		document.getElementById('display3').innerHTML = ("Last Name:"+ document.getElementById("lastName").value);			
+        document.getElementById('display2').innerHTML = ("Email:"+ document.getElementById("email").value);	
+		document.getElementById('display4').innerHTML = ("Number:"+ document.getElementById("number").value);
+	//document.getElementById('display5').innerHTML = ("Number:"+ document.getElementById("number").value);
+}
+
+
+
+
+</script>
+
+</body>
+</html>
